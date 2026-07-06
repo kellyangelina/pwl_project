@@ -22,7 +22,7 @@ class JurusanController extends Controller
      */
     public function create()
     {
-        return view('jurusan.create');
+        return view('jurusan.create', []);
     }
 
     /**
@@ -75,5 +75,5 @@ class JurusanController extends Controller
         Jurusan::find($id)->delete();
 
         return redirect()->action([JurusanController::class, 'index']);
-    }
+    }    
 }

@@ -22,7 +22,7 @@ class MataKuliahController extends Controller
      */
     public function create()
     {
-        return view('matakuliah.create');
+        return view('matakuliah.create', []);
     }
 
     /**
@@ -75,5 +75,5 @@ class MataKuliahController extends Controller
         MataKuliah::find($id)->delete();
 
         return redirect()->action([MataKuliahController::class, 'index']);
-    }
+    }    
 }

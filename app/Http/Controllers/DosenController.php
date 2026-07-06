@@ -22,7 +22,7 @@ class DosenController extends Controller
      */
     public function create()
     {
-        return view('dosen.create');
+        return view('dosen.create', []);
     }
 
     /**
@@ -75,5 +75,5 @@ class DosenController extends Controller
         Dosen::find($id)->delete();
 
         return redirect()->action([DosenController::class, 'index']);
-    }
+    }    
 }

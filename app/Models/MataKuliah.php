@@ -6,12 +6,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class MataKuliah extends Model
 {
-    protected $table='table_matakuliah';
-    protected $fillable=[
-        'jurusan_id',
-        'Kode_MK',
-        'Nama_MK',
+    protected $table = 'table_mata_kuliah';
+
+    protected $fillable = [
+        'Jurusan_Id',
+        'Kode_Mata_Kuliah',
+        'Nama_Mata_Kuliah',
         'SKS',
-        'dosen_id'
+        'Dosen_Id'
     ];
+
+    public function kelas() {
+        return $this->hasMany(Kelas::class, 'id', 'kode_mata_kuliah');
+    }
 }
