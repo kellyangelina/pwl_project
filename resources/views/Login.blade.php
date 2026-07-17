@@ -25,10 +25,8 @@
                     <td colspan=5><input type="password" name="password" size="55" value="" placeholder="password" class="form-control"></td>
                 </tr>
                 <tr>
-                    <tr>
                     <td colspan="3" align="center"><input type="reset" value="Batal" class="form-control"></td>
                     <td colspan="3" align="center"><input type="submit" value="Login" class="form-control"></td>
-                </tr>
                 </tr>
             </table>
         </form>

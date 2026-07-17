@@ -7,10 +7,13 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\MataKuliahController;
 use App\Http\Controllers\JurusanController;
 use App\Http\Controllers\KelasController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('landing');
+    return view('landing', [
+        'user' => Auth::user(),
+    ]);
 })->name('landing');
 
 Route::middleware('auth')->group(function(){

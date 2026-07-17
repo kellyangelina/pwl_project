@@ -6,14 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class MataKuliah extends Model
 {
-    protected $table = 'table_mata_kuliah';
+    protected $table = 'table_matakuliah';
 
     protected $fillable = [
-        'Jurusan_Id',
-        'Kode_Mata_Kuliah',
-        'Nama_Mata_Kuliah',
+        'jurusan_id',
+        'Kode_MK',
+        'Nama_MK',
         'SKS',
-        'Dosen_Id'
+        'dosen_id'
     ];
 
     public function kelas() {

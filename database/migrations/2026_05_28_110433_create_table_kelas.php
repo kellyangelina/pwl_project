@@ -16,10 +16,8 @@ return new class extends Migration
             $table->string('kode_kelas');
 	        $table->unsignedBigInteger('kode_mata_kuliah');
             // Define foreign key constraint
-            $table->foreign('kode_mata_kuliah')->references('id')->on('table_mata_kuliah')->onDelete('cascade');
 
 	        $table->unsignedBigInteger('kode_dosen');
-            $table->foreign('kode_dosen')->references('id')->on('table_dosen')->onDelete('cascade');
 
 	        $table->enum('hari', ['senin', 'selasa', 'rabu', 'kamis', 'jumat']);
 	        $table->enum('jam', ['07:00 - 08:40', '08:50 - 11:30', '12:30 - 14:10', '17:00 - 18:40', '19:00 - 20:40']);

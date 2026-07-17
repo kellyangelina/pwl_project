@@ -13,7 +13,7 @@ class Dosen extends Model
               'NIP',
               'NIDN',
               'Pendidikan_Terakhir',
-              'Jurusan_id',
+              'jurusan_id',
               'Tempat_Lahir',
               'Tanggal_Lahir',
               'Alamat'
